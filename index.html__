@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.2.0/react-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/4.2.2/react-router-dom.js"></script>
+    <script src="babel.min.js"></script>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    <div id="ticks"></div>
+    <div id="tags_cnt"></div>
+
+    <!-- Main app container -->
+    <div id="id-react_app"></div>
+
+    <script type="text/babel" src="pages.js"></script>
+    <script type="text/babel" src="components/PageTemplate.js"></script>
+    <script type="text/babel" src="components/MainMenu.js"></script>
+    <script type="text/babel" src="components/Tag.js"></script>
+    <script type="text/babel" src="components/TagCloud.js"></script>
+    <script type="text/babel" src="components/CardContainer.js"></script>
+    <script type="text/babel" src="components/WorkCard.js"></script>
+    <script type="text/babel">
+
+        // import Clock from '/components/Clock.js';
+
+        // function formatName(user) {
+        //     return user.firstName + ' ' + user.lastName;
+        // }
+        //
+        // const user = {
+        //     firstName: 'Alex',
+        //     lastName: 'Brown'
+        // };
+        //
+        // const element =
+        //     <div>
+        //         <h1>Hello, {2+2} {formatName(user)}!</h1>
+        //         <p>Good to see you here</p>
+        //     </div>
+        // ;
+        //
+        // ReactDOM.render(
+        //     element,
+        //     document.getElementById('root')
+        // );
+
+        // ReactDOM.render(
+        //     <Clock/>,
+        //     document.getElementById('ticks')
+        // );
+
+        // ReactDOM.render(
+        //     <Tag/>,
+        //     document.getElementById('tags_cnt')
+        // );
+
+        // ReactDOM.render(
+        //     <Tag active="true" text="Social Networks"/>,
+        //     document.getElementById('tags_cnt')
+        // );
+
+
+        // function Welcome(props) {
+        //     return <h1>Hello, {props.name}</h1>;
+        // }
+        // const elementWelcome = <Welcome name="Sara" />;
+        // ReactDOM.render(
+        //     elementWelcome,
+        //     document.getElementById('root')
+        // );
+
+
+        // function App() {
+        //     return (
+        //         <div>
+        //             <Welcome name='Sue'/>
+        //             <Welcome name='Piter'/>
+        //             <Welcome name='Mark'/>
+        //             <Tag text="#Programming" active="true"/>
+        //         </div>
+        //     );
+        // }
+        // ReactDOM.render(
+        //     <App />,
+        //     document.getElementById('root')
+        // );
+
+        // ReactDOM.render(
+        //     <TagCloud />,
+        //     document.getElementById('tags_cnt')
+        // );
+
+
+
+
+        // import {
+        //   HashRouter,
+        //   Route
+        // } from 'react-router-dom'
+        //
+        // import {
+        //   Home,
+        //   About,
+        //   Work
+        // } from './pages'
+
+        // render(
+        //   <HashRouter>
+        //     <div class="main">
+        //       <Route exact path="/" component={Home} />
+        //       <Route path="/about" component={About} />
+        //       <Route path="/work" component={Work} />
+        //     </div>
+        //   </HashRouter>,
+        //   document.getElementById('id-react_app')
+        // )
+
+    </script>
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      To set up a production-ready React build environment, follow these instructions:
+      * https://reactjs.org/docs/add-react-to-a-new-app.html
+      * https://reactjs.org/docs/add-react-to-an-existing-app.html
+
+      You can also use React without JSX, in which case you can remove Babel:
+      * https://reactjs.org/docs/react-without-jsx.html
+      * https://reactjs.org/docs/cdn-links.html
+    -->
+</body>
+</html>
