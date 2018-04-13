@@ -29,11 +29,15 @@ const unsibscribe = store.subscribe(() =>
 )
 
 store.dispatch(addWork({
+  featured: true,
   title: 'Present builder (html version)',
-  description: 'Present builder allows you to create a small graphic cards (presents) users can send their friends.'+
-    ' User can upload the image from local disk or select one from social network. After decoration user can upload result to social network for moderation.'+
-    ' Admin panel for professional designers also was implemented. They upload sprites and show live present preview.',
-  benefit: 'This tool increased presents count on ok.ru portal\'s database and sails',
+  description: {
+    common: 'Present builder allows you to create a small graphic cards (presents) users can send their friends.'+
+      ' User can upload the image from local disk or select one from social network. After decoration user can upload result to social network for moderation.'+
+      ' Admin panel for professional designers also was implemented. They upload sprites and show live present preview.',
+    benefits: 'This tool increased presents count on ok.ru portal\'s database and sails',
+    tech: 'Creating bitmap from a bunch of canvases was a very interesting task.'
+  },
   dateStart: 'May 22 2014',
   dateEnd: 'Jul 25 2014',
   images: ['https://s3.eu-central-1.amazonaws.com/grishanov.org/img/constructor4.jpg',
@@ -47,19 +51,55 @@ store.dispatch(addWork({
   teamSize: 3
 }))
 store.dispatch(addWork({
-  title: 'New work title',
-  description: 'New work description',
-  images: ['https://www.travelgayeurope.com/wp-content/uploads/2017/02/Gay-RIGA-City-Guide.jpg']
-}))
+  title: 'The Pushkin state museun of fine arts and ok.ru',
+  description: {
+    common: 'Partner project with famous museum. Combine and intergrate different services. Coordinating remote team.',
+    benefits: 'Reputation marketing for social network and new clients for museum.',
+    tech: 'VR service integration into our application'
+  },
+  dateStart: 'Apr 10 2017',
+  dateEnd: 'Apr 28 2017',
+  images: ['https://s3.eu-central-1.amazonaws.com/grishanov.org/img/museums1.jpg',
+    'https://s3.eu-central-1.amazonaws.com/grishanov.org/img/museums2.jpg'
+  ],
+  url: 'https://artsmuseum.ok.ru/',
+  tags: ['html', 'javascript', 'audio'],
+  complexity: 2,
+  role: 'Project Manager',
+  teamSize: 8
+}));
 store.dispatch(addWork({
-  title: 'Other new work title',
-  description: 'New work description',
-  images: ['https://d1x3cbuht6sy0f.cloudfront.net/sales/43260/afd21695_994d_48f7_84b9_2d9b4072a696.jpg']
-}))
+  featured: true,
+  title: 'Olympic games 2014',
+  description: {
+    common: 'User must collect coins and reach finish. Share result with your friends!',
+    benefits: 'Relation with important event for the business',
+    tech: 'Classic game loop implementation on javascript: sprites, collisions, key handling. Designing of infinite game world was amusing including textures and track curve'
+  },
+  dateStart: 'Dec 11 2013',
+  dateEnd: 'Feb 14 2014',
+  images: ['https://s3.eu-central-1.amazonaws.com/grishanov.org/img/olimp.png'],
+  url: null,
+  tags: ['html', 'javascript', 'jquery', 'game', 'animation', 'canvas'],
+  complexity: 4,
+  role: 'Developer',
+  teamSize: 3
+}));
 store.dispatch(addWork({
-  title: 'Work with no images',
-  description: 'New work description'
+  title: 'Cat detector',
+  description: {
+    common: 'Hackaton project. Implementing new experimantal features for social network. The app detects cats on user uploaded photos.'
+  },
+  images: ['https://s3.eu-central-1.amazonaws.com/grishanov.org/img/catdetector.png'],
+  dateStart: 'Jan 01 2014',
+  dateEnd: 'Jan 30 2014',
+  url: null,
+  tags: ['AI', 'social', 'javascript'],
+  complexity: 4,
+  role: 'Project Manager',
+  teamSize: 4
 }))
+
 store.dispatch(setWorkFilter(''))
 
 unsibscribe()

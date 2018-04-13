@@ -1,5 +1,5 @@
 {
-  "name": "cvreact",
+  "name": "fastcv",
   "version": "1.0.0",
   "description": "cv static site",
   "main": "babel.min.js",

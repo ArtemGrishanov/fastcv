@@ -12,7 +12,6 @@ Webpack watch mode:
 
 Run "webpack --watch" in console tab.
 
-
 Webpack dev server:
 
 npm install --save-dev webpack-dev-server

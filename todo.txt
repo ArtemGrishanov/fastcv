@@ -1,0 +1,8 @@
+
+
+
+IDEAS:
+- Уметь дать ссылку на конкретный проект
+- Make work cards larger or smaller depending on project weight (complexity, duration etc...)
+- Host Olimp2014 project on my domain
+- Send links on this project to somebody
