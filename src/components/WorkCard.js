@@ -14,7 +14,7 @@ export const WorkCard = ({title, description, images}) => {
 
       <div className="work-card-title_wr">
         <p className="work-card-title">{title}</p>
-        <p className="work-card-desc">{description}</p>
+        <p className="work-card-desc">{description.common}</p>
       </div>
     </div>
   );

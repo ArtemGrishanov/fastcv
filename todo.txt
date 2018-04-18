@@ -2,7 +2,10 @@
 
 
 IDEAS:
-- Уметь дать ссылку на конкретный проект
+- Show only 4 projects on start, then load others
+- "smart" image loading
+- Specific project link
 - Make work cards larger or smaller depending on project weight (complexity, duration etc...)
 - Host Olimp2014 project on my domain
 - Send links on this project to somebody
+- Set up 'ok.ru' tag
