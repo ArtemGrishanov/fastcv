@@ -2,6 +2,7 @@
 
 
 IDEAS:
+- Featured badge on the project
 - Show only 4 projects on start, then load others
 - "smart" image loading
 - Specific project link
@@ -9,3 +10,5 @@ IDEAS:
 - Host Olimp2014 project on my domain
 - Send links on this project to somebody
 - Set up 'ok.ru' tag
+- mobile optimization
+- specific project link, copy from page

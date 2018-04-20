@@ -77,11 +77,9 @@ h1 {
   height: 520px;
   background-color: #fff;
   padding: 20px;
+  margin: 20px;
   box-sizing: border-box;
   font-size: 20px;
-}
-.work-card + .work-card {
-  margin-left: 30px;
 }
 .work-card-img {
   position: relative;

@@ -26,12 +26,20 @@ const initialState = {
   ]
 }
 
+/**
+* Create key from title for direct project link
+*/
+function createKey(str) {
+  return str.replace(/[^A-z0-9]/,'')
+}
+
 function works(state = [], action) {
   switch(action.type) {
     case ACTION_ADD_WORK: {
       return [
           ...state,
           {
+            key: createKey(action.workData.title),
             title: action.workData.title,
             description: action.workData.description,
             date: action.workData.date,

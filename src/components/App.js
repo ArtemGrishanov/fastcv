@@ -13,6 +13,9 @@ import {
   Works,
   Error
 } from './pages'
+import { WorkPage } from './WorkPage'
+import { works } from '../works'
+
 
 const App = () => (
   <HashRouter>
@@ -21,6 +24,9 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/works" component={Works} />
+        <Route path="/work/" render={(props) =>
+          <WorkPage works={works} />
+        } />
         <Route component={Error} />
       </Switch>
     </div>
