@@ -15,7 +15,7 @@ import { works } from './works'
 
 // const store = createStore(cvApp)
 
-works.forEach((element) => element.key = element.title.replace(/[^A-z0-9]/g,''))
+works.forEach((element) => element.workId = element.title.replace(/[^A-z0-9]/g,''))
 console.dir(works)
 
 ReactDOM.render(

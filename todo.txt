@@ -12,3 +12,11 @@ IDEAS:
 - Set up 'ok.ru' tag
 - mobile optimization
 - specific project link, copy from page
+- og tags
+
+DESIGN:
+- complexity stars, how to show it on card and project page?
+- feature badge
+- back button
+- favicon
+- how to show different description types?

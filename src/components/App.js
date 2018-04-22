@@ -23,7 +23,9 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/works" component={Works} />
+        <Route path="/works" render={(props) =>
+          <Works works={works} />
+        } />
         <Route path="/work/" render={(props) =>
           <WorkPage works={works} />
         } />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const WorkCard = ({title, description, images}) => {
+export const WorkCard = ({workId, title, description, images}) => {
 
   const img = (images && images.length > 0) ? images[0]: null;
   const s = {
@@ -8,7 +8,7 @@ export const WorkCard = ({title, description, images}) => {
   };
 
   return (
-    <div className="work-card">
+    <a href={"#/work/"+workId} className="work-card">
 
       <div className={"work-card-img" + ((img) ? "" : " __noimage")} style={s}></div>
 
@@ -16,6 +16,6 @@ export const WorkCard = ({title, description, images}) => {
         <p className="work-card-title">{title}</p>
         <p className="work-card-desc">{description.common}</p>
       </div>
-    </div>
+    </a>
   );
 }

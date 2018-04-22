@@ -1,5 +1,6 @@
 export const works = [
     {
+      key: '12321342343434345',
       featured: true,
       title: 'Present builder (html version)',
       description: {
