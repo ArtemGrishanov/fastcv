@@ -17,14 +17,14 @@ import { WorkPage } from './WorkPage'
 import { works } from '../works'
 
 
-const App = () => (
+const App = ( {tags} ) => (
   <HashRouter>
     <div className="main">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/works" render={(props) =>
-          <Works works={works} />
+          <Works works={works} tags={tags}/>
         } />
         <Route path="/work/" render={(props) =>
           <WorkPage works={works} />

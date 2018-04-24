@@ -13,6 +13,8 @@ IDEAS:
 - mobile optimization
 - specific project link, copy from page
 - og tags
+- github repo badge
+- mob menu
 
 DESIGN:
 - complexity stars, how to show it on card and project page?

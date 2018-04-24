@@ -1,11 +1,77 @@
+/*
+ * Sources:
+ * - old hdd disc, flysoft projects
+ * - alex/WebstormProjects
+ * - alex/WebstormProjects/promo
+ * - alex/Documents/Projects
+ * - alex/Documents/Projects/20xx
+ * -
+ * - BFG...
+ * - Flysoft...
+ * - catofott
+ * - Barman game for vk
+ */
+
+
 export const works = [
     {
-      key: '12321342343434345',
+      featured: true,
+      title: 'Testix',
+      description: {
+        common: 'Online interactive content creation editor. No programmers skills are needed: build a quiz or a game online in minutes and publish it!',
+        benefits: 'A few companies already have created their products and increase user engagement!',
+        tech: 'Many different technical decisions. Also tricky facebook panorama publishing process was implemented.'
+      },
+      dateStart: '2015',
+      dateEnd: '2018',
+      images: [],//TODO
+      url: 'https://testix.me',
+      tags: ['aws','javascript','html','css','facebook','social','canvas'],
+      teamSize: 3,
+      role: 'Founder, CTO',
+      complexity: 5
+    },
+    {
+      featured: true,
+      title: 'Photo colorizer',
+      description: {
+        common: 'Initially it was an educational project developed by students. Then we prepared the project for production, making it available for millions of users',
+        tech: 'Neuro network allows you to restore an old photos colors.'
+      },
+      dateStart: 'Apr 2017',
+      dateEnd: 'May 2017',
+      images: [], //TODO
+      url: '',
+      tags: ['ai','html','javascript','social'],
+      teamSize: 10,
+      role: 'Project Manager',
+      complexity: 4
+    },
+    {
+      title: 'The Pushkin state museum of fine arts',
+      description: {
+        common: 'Partner project with famous museum. The project implied integration of different services. Also coordinating remote team.',
+        benefits: 'Reputation grows for our company and new clients for museum.',
+        tech: 'VR service integration into our application'
+      },
+      dateStart: 'Apr 10 2017',
+      dateEnd: 'Apr 28 2017',
+      images: [
+        '//grishanov.org/img/museums1.jpg',
+        '//grishanov.org/img/museums2.jpg'
+      ],
+      url: 'https://artsmuseum.ok.ru/',
+      tags: ['html', 'javascript', 'audio'],
+      complexity: 2,
+      role: 'Project Manager',
+      teamSize: 8
+    },
+    {
       featured: true,
       title: 'Present builder (html version)',
       description: {
         common: 'Present builder allows you to create a small graphic cards (presents) users can send their friends.'+
-          ' User can upload the image from local disk or select one from social network. After decoration user can upload result to social network for moderation.'+
+          ' A user can upload the image from local disk or select one in his profile. After decoration user can upload result to social network for moderation.'+
           ' Admin panel for professional designers also was implemented. They upload sprites and show live present preview.',
         benefits: 'This tool increased presents count on ok.ru portal\'s database and sails',
         tech: 'Creating bitmap from a bunch of canvases was a very interesting task.'
@@ -26,29 +92,10 @@ export const works = [
       teamSize: 3
     },
     {
-      title: 'The Pushkin state museun of fine arts and ok.ru',
-      description: {
-        common: 'Partner project with famous museum. Combine and intergrate different services. Coordinating remote team.',
-        benefits: 'Reputation marketing for social network and new clients for museum.',
-        tech: 'VR service integration into our application'
-      },
-      dateStart: 'Apr 10 2017',
-      dateEnd: 'Apr 28 2017',
-      images: [
-        '//grishanov.org/img/museums1.jpg',
-        '//grishanov.org/img/museums2.jpg'
-      ],
-      url: 'https://artsmuseum.ok.ru/',
-      tags: ['html', 'javascript', 'audio'],
-      complexity: 2,
-      role: 'Project Manager',
-      teamSize: 8
-    },
-    {
       title: 'Newyear 2015',
       description: {
-        common: 'New project where the user is required to collect the needed combination of gems to go through the levels',
-        tech: 'Unified model for mobile and Web versions, Drag-n-drop'
+        common: 'New project where the user is required to collect the specific combination of gems to go through the levels',
+        tech: 'Single model for mobile and web app versions, Drag-n-drop'
       },
       dateStart: 'Nov 01 2015',
       dateEnd: 'Dec 24 2015',
@@ -66,7 +113,7 @@ export const works = [
     {
       title: 'Hockey TV Show Video Quiz',
       description: {
-        common: 'Video polling on the serial where you shall give an answer faster than your friends. You can publish your result in the social network',
+        common: 'Video polling on the tv show where you shall give an answer faster than your friends. You can publish your result in the social network',
         tech: 'JSON quiz format for fast edition'
       },
       dateStart: 'Jul 30 2014',
@@ -83,8 +130,8 @@ export const works = [
     {
       title: 'The School',
       description: {
-        common: 'Simple game for gathering items on school subject',
-        tech: 'Canvas animations, Asynchronous API request pool, Localization on-the-fly! Requesting translations from API and replacing texts in html dom'
+        common: 'Simple viral game. Collect all items in your school room.',
+        tech: 'Canvas animations, asynchronous API request pool, localization on-the-fly!'
       },
       dateStart: 'Jul 30 2014',
       dateEnd: 'Sep 01 2014',
@@ -102,18 +149,17 @@ export const works = [
     {
       title: 'Ok.ru Happy Birthday 9!',
       description: {
-        common: 'Funny viral project',
-        tech: 'animations'
+        common: 'How to attract users for company\'s date? Build a funny viral game! Blow a balloon large as you can.'
       },
-      dateStart: '',
-      dateEnd: '',
+      dateStart: '',//TODO
+      dateEnd: '',//TODO
       images: [
         '//grishanov.org/img/ok9let_1.jpg',
         '//grishanov.org/img/ok9let_2.jpg',
         '//grishanov.org/img/ok9let_3.jpg'
       ],
       url: 'https://9.ok.ru',
-      tags: ['animation', 'css'],
+      tags: ['animation', 'html', 'javascript', 'css'],
       complexity: 4,
       role: 'Developer',
       teamSize: 4
@@ -197,8 +243,8 @@ export const works = [
         '//grishanov.org/img/mayor1.jpg',
         '//grishanov.org/img/mayor2.jpg'
       ],
-      dateStart: 'May 30 2013',
-      dateEnd: 'Jul 01 2013',
+      dateStart: 'Sep 06 2012',
+      dateEnd: 'Nov 23 2012',
       url: null,
       tags: ['actionscript3','flash','flex','animation','rest','social'],
       complexity: 3,
@@ -213,8 +259,8 @@ export const works = [
       images: [
         '//grishanov.org/img/securityquiz1.jpg'
       ],
-      dateStart: 'May 30 2013',
-      dateEnd: 'Jul 01 2013',
+      dateStart: 'Jul 13 2012',
+      dateEnd: 'Sep 18 2012',
       url: null,
       tags: ['actionscript3','flash','flex','animation','rest','social'],
       complexity: 3,
@@ -257,9 +303,33 @@ export const works = [
     {
       title: 'Barman',
       description: {
+        common: 'Hobby project. Develop a concept, hire a designer.'
+      },
+      images: ['//grishanov.org/img/Barman.jpg'],
+      role: 'Founder, Developer',
+      dateStart: 'Aug 2010',
+      dateEnd: 'Nov 2010',
+      tech: ['java', 'mysql', 'php', 'actionscript3', 'animation', 'flash', 'rest', 'vk', 'social', 'gamedev']
+    },
+    {
+      title: 'Facecontrol',
+      description: {
         common: ''
       },
-      images: ['//grishanov.org/img/Barman.jpg']
+      images: ['//grishanov.org/img/Facecontrol.jpg'],
+      dateStart: 'Jul 2010',
+      dateEnd: 'Dec 2010'
+    },
+    {
+      title: 'Radio',
+      description: {
+        common: '',
+        tech: ''
+      },
+      images: ['//grishanov.org/img/Radio.jpg'],
+      tags: ['php','lastfm','rest','actionscript3','flex'],
+      dateStart: '2010',
+      dateEnd: '2010'
     },
     {
       title: 'Mafia',
@@ -267,8 +337,8 @@ export const works = [
         common: 'Hardcore mobile action. iOs? Android? Java2ME only! Full English localization',
         tech: 'Scripting language. Complex memory management and bitmap data.'
       },
-      dateStart: 'Jan 01 2008',
-      dateEnd: 'Dec 31 2009',
+      dateStart: '2008',
+      dateEnd: '2009',
       images: [
         '//grishanov.org/img/Brat2.jpg',
         '//grishanov.org/img/Brat_2.jpg',
@@ -276,41 +346,23 @@ export const works = [
         '//grishanov.org/img/Brat_4.jpg',
         '//grishanov.org/img/Brat_5.jpg'
       ],
-      complexity: 5
+      tags: ['java', 'mobile', 'game'],
+      complexity: 5,
+      role: 'Developer'
     },
     {
-      title: 'Facecontrol',
+      title: 'Resource tool for mobile games',
       description: {
-        common: ''
+        common: 'Tool for packing small images to sprite to minimize app size.',
+        tech: 'Genetic algorithm was used'
       },
-      images: ['//grishanov.org/img/Facecontrol.jpg']
-    },
-    {
-      title: 'Radio',
-      description: {
-        common: ''
-      },
-      images: ['//grishanov.org/img/Radio.jpg'],
-      tags: ['php','lastfm','rest']
-    },
-    {
-      featured: true,
-      title: 'Take 2',
-      description: {
-        common: 'popular Take2 game implemented in Facebook. Multiplayer: you can arrange words for speed in real time. Bots are used in case free users are not available',
-        tech: 'Crossword generation based on vocabulary. Programming of a bot playing with the user on his own'
-      },
-      images: [
-        '//grishanov.org/img/Take2_2.jpg',
-        '//grishanov.org/img/Take2_screen.png'
-      ],
-      dateStart: 'Jan 05 2011',
-      dateEnd: 'May 20 2011',
-      url: null,
-      tags: ['flash','actionscript3','animation','facebook','game','rest','social'],
+      dateStart: '2008',
+      dateEnd: '2008',
+      images: [],//TODO
+      tags: ['c#','.net'],
       complexity: 4,
-      role: 'Developer',
-      teamSize: 12
+      teamSize: 2,
+      role: 'Developer'
     },
     {
       title: 'Shopping School',
@@ -323,8 +375,9 @@ export const works = [
         '//grishanov.org/img/shoppingschool2.jpg'
       ],
       complexity: 2,
-      dateStart: 'Jan 01 2011',
-      dateEnd: 'Dec 01 2011',
+      dateStart: 'Aug 31 2011',
+      dateEnd: 'Sep 30 2011',
+      tags: ['actionscript3','Flex']
     },
     {
       featured: true,
@@ -339,8 +392,32 @@ export const works = [
         '//grishanov.org/img/informer3.jpg',
         '//grishanov.org/img/informer4.jpg'
       ],
-      dateStart: 'Jun 01 2011',
+      dateStart: 'Jun 30 2011',
       dateEnd: 'Aug 30 2011',
+      tags: ['graphics','actionscript3','flash','twitter','csv','rest']
+    },
+    {
+      featured: true,
+      title: 'Take 2',
+      description: {
+        common: 'Popular Take2 game implemented in Facebook. Multiplayer: you can arrange words for speed in real time. Bots are used in case free users are not available',
+        tech: 'Crossword generation based on vocabulary. Programming of a bot playing with the user on his own'
+      },
+      images: [
+        '//grishanov.org/img/Take2_2.jpg',
+        '//grishanov.org/img/Take2_screen.png'
+      ],
+      dateStart: 'Jan 20 2011',
+      dateEnd: 'May 30 2011',
+      url: null,
+      tags: ['flash','actionscript3','animation','facebook','game','rest','social'],
+      complexity: 4,
+      role: 'Developer',
+      teamSize: 12
+    },
+    {
+      title: 'Chess',
+      //TODO
     },
     {
       featured: true,
@@ -354,8 +431,9 @@ export const works = [
         '//grishanov.org/img/TicTacToe_1.jpg'
       ],
       complexity: 5,
-      dateStart: 'Jan 01 2006',
-      dateEnd: 'Dec 01 2006',
+      dateStart: '2006',
+      dateEnd: '2006',
+      tags: ['java', 'ai', 'game']
     },
     {
       title: 'Numerology',
@@ -386,6 +464,7 @@ export const works = [
       complexity: 3,
       dateStart: 'Jun 01 2004',
       dateEnd: 'Oct 01 2005',
+      tags: ['java'],
       teamSize: 4
     },
     {

@@ -5,6 +5,7 @@ import { CardContainer } from './CardContainer'
 import { WorkCard } from './WorkCard'
 import { FilteredWorkCardsList } from '../containers/FilteredWorkCardsList'
 
+
 export const Home = () =>
   <PageTemplate>
     <section className="home">
@@ -12,18 +13,18 @@ export const Home = () =>
     </section>
   </PageTemplate>
 
-export const About = () =>
+export const Me = () =>
   <PageTemplate>
-    <section className="about">
-      <h1>About the Company</h1>
+    <section className="me">
+      <h1>Artem Grishanov</h1>
     </section>
   </PageTemplate>
 
-export const Works = ({works}) =>
+export const Works = ({works, tags}) =>
   <PageTemplate>
     <section className="works">
       <h1>Works</h1>
-      <TagCloud>
+      <TagCloud tags={tags}>
       </TagCloud>
       <CardContainer works={works}>
       </CardContainer>

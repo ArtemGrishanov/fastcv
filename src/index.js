@@ -15,11 +15,23 @@ import { works } from './works'
 
 // const store = createStore(cvApp)
 
-works.forEach((element) => element.workId = element.title.replace(/[^A-z0-9]/g,''))
+const allTags = [];
+works.forEach((element) => {
+  element.workId = element.title.replace(/[^A-z0-9]/g,'')
+  // collect all unique tags
+  if (element.tags && element.tags.length > 0) {
+    element.tags.forEach((tag) => {
+      if (allTags.indexOf(tag) < 0) allTags.push(tag)
+    })
+  }
+})
+
+
+
 console.dir(works)
 
 ReactDOM.render(
-  <App/>,
+  <App tags={allTags}/>,
   document.getElementById('id-react_app')
 );
 

@@ -14,7 +14,7 @@ export const WorkCard = ({workId, title, description, images}) => {
 
       <div className="work-card-title_wr">
         <p className="work-card-title">{title}</p>
-        <p className="work-card-desc">{description.common}</p>
+        <p className="work-card-desc">{(description && description.common) ? description.common: ''}</p>
       </div>
     </a>
   );
