@@ -6,7 +6,7 @@ import { createStore } from 'redux'
 
 import './css/style.css'
 import App from './components/App'
-import { works } from './works'
+import { cv } from './cv'
 // import {
 //   addWork,
 //   setWorkFilter
@@ -15,8 +15,9 @@ import { works } from './works'
 
 // const store = createStore(cvApp)
 
-const allTags = [];
-works.forEach((element) => {
+const allTags = []
+const selectedWorks = []
+cv.works.forEach((element) => {
   element.workId = element.title.replace(/[^A-z0-9]/g,'')
   // collect all unique tags
   if (element.tags && element.tags.length > 0) {
@@ -24,14 +25,13 @@ works.forEach((element) => {
       if (allTags.indexOf(tag) < 0) allTags.push(tag)
     })
   }
+
+  //
+  if (element.selectedWorks) selectedWorks.push(element)
 })
 
-
-
-console.dir(works)
-
 ReactDOM.render(
-  <App tags={allTags}/>,
+  <App tags={allTags} selectedWorks={selectedWorks}/>,
   document.getElementById('id-react_app')
 );
 

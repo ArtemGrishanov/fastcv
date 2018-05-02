@@ -12,15 +12,24 @@
  * - Barman game for vk
  */
 
+const works = [
+    {
+      title: 'Fastcv',
+      description: {
+        common: 'Create your site swiftly with no development'
+      },
+      url: 'https://github.com/ArtemGrishanov/fastcv',
+      images: [
 
-export const works = [
+      ]
+    },
     {
       featured: true,
       title: 'Testix',
       description: {
         common: 'Online interactive content creation editor. No programmers skills are needed: build a quiz or a game online in minutes and publish it!',
         benefits: 'A few companies already have created their products and increase user engagement!',
-        tech: 'Many different technical decisions. Also tricky facebook panorama publishing process was implemented.'
+        tech: 'Many different technical decisions. Also, tricky facebook panorama publishing process was implemented.'
       },
       dateStart: '2015',
       dateEnd: '2018',
@@ -35,7 +44,7 @@ export const works = [
       featured: true,
       title: 'Photo colorizer',
       description: {
-        common: 'Initially it was an educational project developed by students. Then we prepared the project for production, making it available for millions of users',
+        common: 'Initially, it was an educational project developed by students. Then we prepared the app for production, making it available for millions of users.',
         tech: 'Neuro network allows you to restore an old photos colors.'
       },
       dateStart: 'Apr 2017',
@@ -50,9 +59,9 @@ export const works = [
     {
       title: 'The Pushkin state museum of fine arts',
       description: {
-        common: 'Partner project with famous museum. The project implied integration of different services. Also coordinating remote team.',
-        benefits: 'Reputation grows for our company and new clients for museum.',
-        tech: 'VR service integration into our application'
+        common: 'Partner project with a famous museum. I coordinated a remote developers team and partners for proper integration of different services.',
+        benefits: 'Reputation grows for our company and new clients for the museum.',
+        tech: 'VR service integration into our application.'
       },
       dateStart: 'Apr 10 2017',
       dateEnd: 'Apr 28 2017',
@@ -68,13 +77,11 @@ export const works = [
     },
     {
       featured: true,
-      title: 'Present builder (html version)',
+      title: 'Present builder (HTML version)',
       description: {
-        common: 'Present builder allows you to create a small graphic cards (presents) users can send their friends.'+
-          ' A user can upload the image from local disk or select one in his profile. After decoration user can upload result to social network for moderation.'+
-          ' Admin panel for professional designers also was implemented. They upload sprites and show live present preview.',
-        benefits: 'This tool increased presents count on ok.ru portal\'s database and sails',
-        tech: 'Creating bitmap from a bunch of canvases was a very interesting task.'
+        common: 'The present builder allows you to create a small cards (presents) users can send their friends. A user can upload the image from local disk or select one in his profile. After decoration, the user can upload the result to a social network for moderation. Admin panel for professional designers also was implemented. They upload sprites and can view a live preview.',
+        benefits: 'This tool increased presents count on ok.ru portal\'s database and sales.',
+        tech: 'Creating a bitmap from a bunch of canvases was an exciting task.'
       },
       dateStart: 'May 22 2014',
       dateEnd: 'Jul 25 2014',
@@ -82,8 +89,8 @@ export const works = [
         '//grishanov.org/img/constructor4.jpg',
         '//grishanov.org/img/constructor3.jpg',
         '//grishanov.org/img/constructor5.jpg',
-        '//grishanov.org/img/constructor1.jpg',
-        '//grishanov.org/img/constructor2.jpg'
+        '//grishanov.org/img/constructor1.png',
+        '//grishanov.org/img/constructor2.png'
       ],
       url: 'https://ok.ru/app/constructor',
       tags: ['html', 'css', 'javascript', 'ajax', 'canvas', 'cors', 'social', 'rest', 'grunt', 'svg', 'animation'],
@@ -94,8 +101,8 @@ export const works = [
     {
       title: 'Newyear 2015',
       description: {
-        common: 'New project where the user is required to collect the specific combination of gems to go through the levels',
-        tech: 'Single model for mobile and web app versions, Drag-n-drop'
+        common: 'It is a mini-game where the user is required to collect the specific combination of gems to go through the levels.',
+        tech: 'Single model for mobile and web app versions, drag-n-drop.'
       },
       dateStart: 'Nov 01 2015',
       dateEnd: 'Dec 24 2015',
@@ -113,8 +120,8 @@ export const works = [
     {
       title: 'Hockey TV Show Video Quiz',
       description: {
-        common: 'Video polling on the tv show where you shall give an answer faster than your friends. You can publish your result in the social network',
-        tech: 'JSON quiz format for fast edition'
+        common: 'Video polling on the tv show where you shall answer faster than your friends. You can publish your result in the social network.',
+        tech: 'JSON quiz format for fast editing.'
       },
       dateStart: 'Jul 30 2014',
       dateEnd: 'Sep 01 2014',
@@ -149,7 +156,7 @@ export const works = [
     {
       title: 'Ok.ru Happy Birthday 9!',
       description: {
-        common: 'How to attract users for company\'s date? Build a funny viral game! Blow a balloon large as you can.'
+        common: 'How to attract users to company\'s date? Build a funny viral game! Blow a balloon large as you can.'
       },
       dateStart: '',//TODO
       dateEnd: '',//TODO
@@ -165,11 +172,10 @@ export const works = [
       teamSize: 4
     },
     {
-      featured: true,
       title: 'Easter 2014',
       description: {
-        common: 'Make your own Easter egg and present it to a friend',
-        tech: 'Pre-rendering all design combinations (more than 600 eggs). After that, a client should register only combination index'
+        common: 'Make your own Easter egg and present it to a friend.',
+        tech: 'Pre-rendering all design combinations (more than 600 eggs). After that, a client should register only combination index.'
       },
       dateStart: 'Mar 11 2014',
       dateEnd: 'Mar 30 2014',
@@ -186,9 +192,9 @@ export const works = [
       featured: true,
       title: 'Olympic games 2014',
       description: {
-        common: 'User must collect coins and reach finish. Share result with your friends!',
-        benefits: 'Relation with important event for the business',
-        tech: 'Classic game loop implementation on javascript: sprites, collisions, key handling. Designing of infinite game world was amusing including textures and track curve'
+        common: 'A user must collect coins and reach the finish. Share result with your friends!',
+        benefits: 'Relation with an important event for the business.',
+        tech: 'Classic game loop implementation on javascript: sprites, collisions, key handling. Designing of the infinite game world was amusing including textures and track curve.'
       },
       dateStart: 'Dec 11 2013',
       dateEnd: 'Feb 14 2014',
@@ -202,7 +208,7 @@ export const works = [
     {
       title: 'Cat detector',
       description: {
-        common: 'Hackaton project. Implementing new experimantal features for social network. The app detects cats on user uploaded photos.'
+        common: 'Hackathon project. Implementing new experimental features for a social network. The app detects cats on user-uploaded photos.'
       },
       images: [
         '//grishanov.org/img/catdetector1.png',
@@ -220,7 +226,7 @@ export const works = [
     {
       title: 'Film promo',
       description: {
-        common: 'The project related to the movie release. My first time responsive experience'
+        common: 'The project related to the movie release. My first-time responsive experience.'
       },
       images: [
         '//grishanov.org/img/okfilm1.jpg',
@@ -237,7 +243,7 @@ export const works = [
     {
       title: 'Mayor Quiz',
       description: {
-        common: 'Entertaining test for the users to demolish myths about the social network'
+        common: 'Entertaining test for the users to demolish myths about the social network. In the app, you can find questions about well-known facts of the social network.'
       },
       images: [
         '//grishanov.org/img/mayor1.jpg',
@@ -254,7 +260,7 @@ export const works = [
     {
       title: 'Security Quiz',
       description: {
-        common: 'The application that develops the skills of user’s secure activity in the Internet. Real fraudsters’ methods to hack the users are given as the questions for the test'
+        common: 'The application improves user security knowledge about the Internet. Real fraudsters’ methods to hack the users are shown as the questions for the quiz.'
       },
       images: [
         '//grishanov.org/img/securityquiz1.jpg'
@@ -270,8 +276,8 @@ export const works = [
     {
       title: 'Friends Gallery',
       description: {
-        common: 'Guess the interests of your friend; collect a gallery of your friends',
-        benefits: 'Gamification helps collecting useful information about social network users',
+        common: 'Guess the interests of your friend; collect a gallery of your friends.',
+        benefits: 'Gamification helps to collect useful information about social network users.',
         tech: 'A lot of custom UI items written in pure Actionscript.'
       },
       images: [
@@ -290,6 +296,7 @@ export const works = [
       title: 'New Year 2013',
       description: {
         common: ''
+        //TODO description
       },
       images: ['//grishanov.org/img/newyear2013.jpg'],
       dateStart: 'Sep 05 2012',
@@ -303,7 +310,7 @@ export const works = [
     {
       title: 'Barman',
       description: {
-        common: 'Hobby project. Develop a concept, hire a designer.'
+        common: 'Hobby project. Developed a concept, hired a designer.'
       },
       images: ['//grishanov.org/img/Barman.jpg'],
       role: 'Founder, Developer',
@@ -315,6 +322,7 @@ export const works = [
       title: 'Facecontrol',
       description: {
         common: ''
+        //TODO
       },
       images: ['//grishanov.org/img/Facecontrol.jpg'],
       dateStart: 'Jul 2010',
@@ -323,6 +331,7 @@ export const works = [
     {
       title: 'Radio',
       description: {
+        //TODO
         common: '',
         tech: ''
       },
@@ -332,10 +341,11 @@ export const works = [
       dateEnd: '2010'
     },
     {
+      featured: true,
       title: 'Mafia',
       description: {
-        common: 'Hardcore mobile action. iOs? Android? Java2ME only! Full English localization',
-        tech: 'Scripting language. Complex memory management and bitmap data.'
+        common: 'Hardcore mobile arcade. iOs? Android? Java2ME only! Go through all locations, fight with your enemies and restore the truth.',
+        tech: 'We developed a new game engine with all standard features: collision detectors, animations, state management, scripting language, complex memory and performance management.'
       },
       dateStart: '2008',
       dateEnd: '2009',
@@ -353,8 +363,8 @@ export const works = [
     {
       title: 'Resource tool for mobile games',
       description: {
-        common: 'Tool for packing small images to sprite to minimize app size.',
-        tech: 'Genetic algorithm was used'
+        common: 'The app for packing small images to sprite to minimize app size.',
+        tech: 'We used a tricky genetic algorithm.'
       },
       dateStart: '2008',
       dateEnd: '2008',
@@ -367,8 +377,7 @@ export const works = [
     {
       title: 'Shopping School',
       description: {
-        common: 'Guess the real price of the product and win a prize. KupiVIP brand gained a huge number of registrations',
-        tech: ''
+        common: 'Guess the real price of the product and win a prize. Partners gained a massive number of leads.'
       },
       images: [
         '//grishanov.org/img/shoppingschool1.jpg',
@@ -383,8 +392,8 @@ export const works = [
       featured: true,
       title: 'Informer',
       description: {
-        common: 'A tool for intranet using. Visualizing company KPIs, tweets and staff photo to show on LED panels in the offices',
-        tech: 'Grabbing data from CSV-like files. Twitter API integration.'
+        common: 'A tool for intranet use. It visualizes company KPIs, tweets, and staff photo to show on LED panels in the offices.',
+        tech: 'The app grabbed data from warehouse system. Twitter API was integrated.'
       },
       images: [
         '//grishanov.org/img/informer1.jpg',
@@ -400,8 +409,8 @@ export const works = [
       featured: true,
       title: 'Take 2',
       description: {
-        common: 'Popular Take2 game implemented in Facebook. Multiplayer: you can arrange words for speed in real time. Bots are used in case free users are not available',
-        tech: 'Crossword generation based on vocabulary. Programming of a bot playing with the user on his own'
+        common: 'Well-known Take2 game implemented on Facebook. Multiplayer: you can arrange words for speed in real time. The app uses bots in case free users are not available.',
+        tech: 'Crossword generation based on vocabulary. Programming of a bot playing with the user on his own.'
       },
       images: [
         '//grishanov.org/img/Take2_2.jpg',
@@ -423,8 +432,8 @@ export const works = [
       featured: true,
       title: 'Tic Tac Toe',
       description: {
-        common: '',
-        tech: 'Amazing AI with level difference! It was very hard to beat it'
+        common: 'Mobile game. Put five "x" in one line on the large field.',
+        tech: 'Amazing AI with a level difference! Beating it was difficult.'
       },
       images: [
         '//grishanov.org/img/TicTacToe2.jpg',
@@ -438,8 +447,8 @@ export const works = [
     {
       title: 'Numerology',
       description: {
-        common: '',
-        tech: 'Custom UI elements. Porting to tens of models'
+        common: 'Input your data, and you will know your fate!',
+        tech: 'Custom UI elements. We prepared the app to dozens of devices.'
       },
       images: [
         '//grishanov.org/img/numerology1.jpg',
@@ -455,8 +464,7 @@ export const works = [
     {
       title: 'Cheat Sheets',
       description: {
-        common: '',
-        tech: 'CMS for manager. Building apps'
+        common: 'This tiny app contains a lot of information about all high school course. My first professional experience as software engineer.'
       },
       images: [
         '//grishanov.org/img/cheatsheets.jpg'
@@ -466,15 +474,24 @@ export const works = [
       dateEnd: 'Oct 01 2005',
       tags: ['java'],
       teamSize: 4
-    },
-    {
-      title: 'Fastcv',
-      description: {
-        common: 'Create your site simply with no development'
-      },
-      url: 'https://github.com/ArtemGrishanov/fastcv',
-      images: [
-
-      ]
     }
 ]
+
+export const cv = {
+  name: 'Artem Grishanov',
+  photoUrl: '//grishanov.org/avatar/avatar380.jpg',
+  quote: 'One, learn a lot about things that matter. Two, work on problems that interest you and three, with people you like and respect. - Paul Graham',
+  about: 'I am 32. Software developer and entrepreneur. Worked in different IT cultures: startups and large companies. 2004-2010 mobile app developer, since 2011 work as frontend developer mainly. Always open to new opportunities, and like to meet all challenges from "fix this old bug" to "build a team and create a new successful startup". Also I\'am interested in marketing, business, and education',
+  personalStats: [
+    {label: 'Experience', value: '13 years'},
+    {label: 'Projects',  value: '50+'},
+    {label: 'Coffee cups',  value: '4096'}
+  ],
+  selectedWorks: [
+    //TODO testix, mafia, present builder
+    works[1],
+    works[4],
+    works[7]
+  ],
+  works: works
+}

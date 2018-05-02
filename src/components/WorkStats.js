@@ -1,22 +1,22 @@
 import React from 'react'
 
-export const WorkStats = ({ work }) => {
+/**
+  * @param {Array} stats {label, value}
+  */
+export const WorkStats = ({ header, stats }) => {
 
   return (
     <div>
-      <h2>Project statistics</h2>
+      {header &&
+        <h2>{header}</h2>
+      }
       <div className="work-stat-wr">
-        <div className="work-stat-i">
-          <p className="work-stat-title">{work.complexity}</p>
-          <p className="work-stat-desc">Complexity</p>
-        </div>
-        <div className="work-stat-i">
-          <p className="work-stat-title">{work.teamSize}</p>
-          <p className="work-stat-desc">Team Size</p>
-        </div>
-
-        {/* it is possible to add other statistics here */}
-        
+        {stats.map((s, i) =>
+          <div key={i} className="work-stat-i">
+            <p className="work-stat-title">{s.value}</p>
+            <p className="work-stat-desc">{s.label}</p>
+          </div>
+        )}
       </div>
     </div>
   )

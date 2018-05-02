@@ -12,10 +12,52 @@ body {
   color: #fff;
 }
 
+h1 {
+  margin: 0 auto;
+  padding: 62px 10px 15px;
+  font-size: 60px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 42px 8px;
+  font-size: 46px;
+  text-align: center;
+}
+
+h3 {
+  margin: 0 auto;
+  padding: 22px 8px;
+  font-size: 28px;
+  text-align: center;
+}
+
 .content {
   width: 1100px;
   margin: 0 auto;
   text-align: center;
+}
+
+.btn {
+  padding: 16px 50px;
+  background-color: #fff;
+  color: #5B4F7B;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 42px;
+  height: 42px;
+  background-image: url(//grishanov.org/i/back-arrow.png);
+  cursor: pointer;
 }
 
 .tag-cloud {
@@ -42,29 +84,58 @@ body {
 }
 
 .page {
-
+  position: relative;
 }
 
-h1 {
-  margin: 0 auto;
-  padding: 62px 10px 15px;
-  font-size: 60px;
-  text-align: center;
-  text-transform: capitalize;
+.page_content {
+  position: relative;
 }
 
-h2 {
+.avatar {
+  width: 240px;
+  height: 240px;
   margin: 0 auto;
-  padding: 42px 8px;
-  font-size: 46px;
-  text-align: center;
+  padding: 20px;
+  border-radius: 999px;
+  background-size: cover;
+  background-color: #999;
 }
 
-h3 {
-  margin: 0 auto;
-  padding: 22px 8px;
-  font-size: 28px;
+.quote {
+  position: relative;
+  color: #fff;
   text-align: center;
+  padding: 40px 60px;
+  font-size: 30px;
+  line-height: 48px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.quote::before,
+.quote::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f00;
+  font-size: 100px;
+ }
+.quote::before {
+  content: '«';
+  left: 0;
+}
+.quote::after {
+  content: '»';
+  right: 0;
+}
+
+.about {
+  color: #d8e2ec;
+  font-size: 18px;
+  line-height: 38px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 10px 50px;
 }
 
 .divider {
@@ -92,17 +163,21 @@ h3 {
   border-bottom: 3px solid #f14d2b;
 }
 
+.showall-btn-cnt {
+  padding: 40px 0 60px;
+}
+
 /**************/
 /* Work cards */
 /**************/
 .card-container {
-  padding: 60px 0;
   text-align: center;
 }
 
 .work-card {
   display: inline-block;
   vertical-align: top;
+  position: relative;
   width: 620px;
   /* height: 520px; */
   background-color: #fff;
@@ -111,6 +186,17 @@ h3 {
   box-sizing: border-box;
   font-size: 20px;
   text-decoration: none;
+}
+.work-card.__featured::after {
+  position: absolute;
+  content: 'Featured';
+  top: 20px;
+  right: -10px;
+	background-color: #F14D2B;
+  color: #fff;
+  font-size: 18px;
+  padding: 14px 30px;
+  border-radius: 0 0 0 16px;
 }
 .work-card-img {
   position: relative;
@@ -134,7 +220,7 @@ h3 {
 .work-card-title_wr {
   color: #817f97;
   text-align: left;
-  padding: 20px 0 8px;
+  padding: 20px 0 0;
 }
 .work-card-title {
   font-weight: bold;
@@ -167,9 +253,12 @@ h3 {
   font-size: 18px;
   line-height: 33px;
   text-align: center;
+  max-width: 800px;
 }
 .work-page-tag-cnt {
-  padding-bottom: 42px;
+    padding-bottom: 42px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .work-page-img {
   max-width: 100%;
@@ -177,44 +266,77 @@ h3 {
 }
 .work-stat-wr {
   text-align: center;
-  padding-bottom: 42px;
+  padding: 20px 0 80px;
 }
 .work-stat-i {
   display: inline-block;
   vertical-align: top;
   text-align: center;
   width: 260px;
+  padding-top: 20px;
 }
 .work-stat-title {
   line-height: 40px;
-  font-size: 56px;
+  font-size: 50px;
 }
 .work-stat-desc {
   line-height: 20px;
-  font-size: 20px;
+  font-size: 18px;
   color: #d8e2ec;
-  margin-top: 32px;
+  margin-top: 22px;
 }
-.work-stat-i + .work-stat-i .work-stat-title {
+/* on narrow screens items will be split on different lines, so it is not working */
+/* .work-stat-i + .work-stat-i .work-stat-title {
     border-left: 1px solid #f25332;
-}
+} */
 .footer {
   margin: 60px auto 80px;
   text-align: center;
 }
+.want_this_label {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 224px;
+  height: 150px;
+  background-image: url(//grishanov.org/i/Artboard.png);
+}
 
+.star_cnt {
+  padding: 6px 0 0;
+  min-height: 16px;
+}
+.star {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 17px;
+  background-image: url(//grishanov.org/i/icon-star.png);
+}
+.star + .star {
+  margin-left: 4px;
+}
 
 @media (max-width:1000px) {
   .content {
     width: 100%;
   }
+  .want_this_label {
+    width: 168px;
+    height: 100px;
+    background-size: 168px 100px !important;
+  }
+  h1 {
+    padding-top: 82px;
+  }
 }
 @media (max-width:640px) {
   .work-card {
-    width: 280px;
+    width: 420px;
   }
   .work-card-img {
-    height: 180px;
+    height: 280px;
   }
   .work-stat-i + .work-stat-i .work-stat-title {
     border-left: none;
@@ -231,7 +353,40 @@ h3 {
   .work-stat-desc {
     display: inline-block;
     vertical-align: top;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 0;
+    line-height: 46px;
+  }
+  .quote {
+    padding: 40px 40px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .quote::before, .quote::after {
+    font-size: 80px;
+  }
+}
+
+@media (max-width:460px) {
+  .work-card {
+    width: 280px;
+  }
+  .work-card-img {
+    height: 180px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.5dppx) {
+  .want_this_label {
+    background-image: url(//grishanov.org/i/Artboard.png);
+    background-size: 224px 150px;
+  }
+  .back {
+    background-size: 42px 42px;
+    background-image: url(//grishanov.org/i/back-arrow@2x.png);
+  }
+  .star {
+    background-size: 18px 17px;
+    background-image: url(//grishanov.org/i/icon-star@2x.png);
   }
 }

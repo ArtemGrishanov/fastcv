@@ -1,24 +1,27 @@
 
 
 
-IDEAS:
-- Featured badge on the project
+TODO:
+- verify all texts
+- Url project link
+
+- mob menu
+- images to some projects
+- todos in cv.js
+- pdf file link
+- og tags
+- icons in footer
+- email as parameter
+- specific project link, copy from page
+- github readme
+- ga counter place
+- contacts page?
+
+- sort works by date
+- production build and deploy on aws
+- set up https -> install cdn
+
 - Show only 4 projects on start, then load others
 - "smart" image loading
-- Specific project link
 - Make work cards larger or smaller depending on project weight (complexity, duration etc...)
-- Host Olimp2014 project on my domain
-- Send links on this project to somebody
-- Set up 'ok.ru' tag
-- mobile optimization
-- specific project link, copy from page
-- og tags
-- github repo badge
-- mob menu
-
-DESIGN:
-- complexity stars, how to show it on card and project page?
-- feature badge
-- back button
-- favicon
-- how to show different description types?
+-
