@@ -17,9 +17,14 @@ export const Home = ({
   about,
   selectedWorks,
   personalStats,
-  worksCount = 0
+  worksCount = 0,
+  facebookLink,
+  linkedinLink,
+  githubLink,
+  email,
+  pdfcv
 }) =>
-  <PageTemplate>
+  <PageTemplate facebookLink={facebookLink} linkedinLink={linkedinLink} githubLink={githubLink} email={email} pdfcv={pdfcv}>
     <section className="home">
       <div className="content">
         <h1>{name}</h1>
@@ -46,8 +51,16 @@ export const Home = ({
     </section>
   </PageTemplate>
 
-export const Works = ({works, tags}) =>
-  <PageTemplate>
+export const Works = ({
+  works,
+  tags,
+  facebookLink,
+  linkedinLink,
+  githubLink,
+  email,
+  pdfcv
+  }) =>
+  <PageTemplate facebookLink={facebookLink} linkedinLink={linkedinLink} githubLink={githubLink} email={email} pdfcv={pdfcv}>
     <section className="works">
       <h1>Works</h1>
       <TagCloud tags={tags}>
@@ -57,8 +70,14 @@ export const Works = ({works, tags}) =>
     </section>
   </PageTemplate>
 
-export const Error = () =>
-  <PageTemplate>
+export const Error = (
+  facebookLink,
+  linkedinLink,
+  githubLink,
+  email,
+  pdfcv
+  ) =>
+  <PageTemplate facebookLink={facebookLink} linkedinLink={linkedinLink} githubLink={githubLink} email={email} pdfcv={pdfcv}>
     <section className="error">
       <h1>Not Found</h1>
     </section>

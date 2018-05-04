@@ -4,7 +4,14 @@ import { Redirect } from 'react-router-dom'
 import { PageTemplate } from './PageTemplate'
 import { WorkStats } from './WorkStats'
 
-export const WorkPage = ({works}) => {
+export const WorkPage = ({
+  works,
+  facebookLink,
+  linkedinLink,
+  githubLink,
+  email,
+  pdfcv
+  }) => {
 
   const workKey = window.location.href.split('/').pop()
   const filteredWorks = works.filter((element) => element.workId === workKey)
@@ -25,7 +32,7 @@ export const WorkPage = ({works}) => {
   }
 
   return (
-    <PageTemplate>
+    <PageTemplate facebookLink={facebookLink} linkedinLink={linkedinLink} githubLink={githubLink} email={email} pdfcv={pdfcv}>
       <a href="/#/works/" className="back"></a>
       <div className='content'>
         <h1>{work.title || "Work title"}</h1>
@@ -34,6 +41,11 @@ export const WorkPage = ({works}) => {
         }
         {work.role &&
           <p className="work-page-role">Project role — {work.role}</p>
+        }
+        {work.url &&
+          <p className="work-page-link">
+            <a href={work.url} target="_blank">{work.url}</a>
+          </p>
         }
         {(work.description && work.description.common) &&
           <p className="work-page-description">{work.description.common}</p>

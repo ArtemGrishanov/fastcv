@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export const MainMenu = () =>
+export const MainMenu = ({ pdfcv }) =>
   <nav className="main-menu">
     <NavLink exact to="/" className="main-menu_i" activeClassName="__selected">
       Me
@@ -9,9 +9,14 @@ export const MainMenu = () =>
     <NavLink to="/works" className="main-menu_i" activeClassName="__selected">
       Works
     </NavLink>
-    <a target="_blank" href="//grishanov.org/pdf/cv.pdf" className="main-menu_i">
-      Pdf
-    </a>
+    <NavLink to="/contacts" className="main-menu_i" activeClassName="__selected">
+      Contacts
+    </NavLink>
+    {pdfcv &&
+      <a target="_blank" href={pdfcv} className="main-menu_i">
+        Pdf
+      </a>
+    }
     {/*<NavLink to="/about" className="main-menu_i" activeClassName="__selected">
       About
     </NavLink>

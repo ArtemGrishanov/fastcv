@@ -1,26 +1,13 @@
 
-
-
 TODO:
-- verify all texts
-- Url project link
-
-- mob menu
-- images to some projects
-- todos in cv.js
 - pdf file link
-- og tags
-- icons in footer
-- email as parameter
-- specific project link, copy from page
-- github readme
-- ga counter place
-- contacts page?
 
-- sort works by date
+- ga counter place
 - production build and deploy on aws
 - set up https -> install cdn
 
+
+- github readme
 - Show only 4 projects on start, then load others
 - "smart" image loading
 - Make work cards larger or smaller depending on project weight (complexity, duration etc...)

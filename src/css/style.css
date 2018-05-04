@@ -40,6 +40,15 @@ h3 {
   text-align: center;
 }
 
+.text {
+  color: #d8e2ec;
+  font-size: 18px;
+  line-height: 38px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .btn {
   padding: 16px 50px;
   background-color: #fff;
@@ -116,15 +125,20 @@ h3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 30px;
+  height: 37px;
+  background-size: 30px 37px;
   color: #f00;
   font-size: 100px;
  }
 .quote::before {
-  content: '«';
+  content: '';
+  background-image: url(//grishanov.org/i/quote-open.png);
   left: 0;
 }
 .quote::after {
-  content: '»';
+  content: '';
+  background-image: url(//grishanov.org/i/quote-close.png);
   right: 0;
 }
 
@@ -242,7 +256,8 @@ h3 {
 /* Work page */
 /*************/
 .work-page-date,
-.work-page-role {
+.work-page-role,
+.work-page-link {
   margin: 20px auto;
   font-size: 30px;
   font-weight: 100;
@@ -255,6 +270,9 @@ h3 {
   text-align: center;
   max-width: 800px;
 }
+.work-page-link a {
+  color: #fff;
+}
 .work-page-tag-cnt {
     padding-bottom: 42px;
     max-width: 800px;
@@ -263,6 +281,8 @@ h3 {
 .work-page-img {
   max-width: 100%;
   margin-bottom: 40px;
+  display: block;
+  margin: 20px auto;
 }
 .work-stat-wr {
   text-align: center;
@@ -316,6 +336,27 @@ h3 {
 }
 .star + .star {
   margin-left: 4px;
+}
+
+.s-icon_cnt {
+  margin: 20px auto;
+}
+.s-icon {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+}
+.s-icon.__linkedin {
+  background-image: url(//grishanov.org/i/linkedin.png);
+}
+.s-icon.__facebook {
+  background-image: url(//grishanov.org/i/facebook.png);
+}
+.s-icon.__github {
+  background-image: url(//grishanov.org/i/github.png);
+}
+.s-icon + .s-icon {
+  margin-left: 22px;
 }
 
 @media (max-width:1000px) {
@@ -374,6 +415,12 @@ h3 {
   .work-card-img {
     height: 180px;
   }
+  .main-menu {
+    padding: 22px 20px 0;
+  }
+  .main-menu_i + .main-menu_i {
+    margin-left: 16px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.5dppx) {
@@ -388,5 +435,11 @@ h3 {
   .star {
     background-size: 18px 17px;
     background-image: url(//grishanov.org/i/icon-star@2x.png);
+  }
+  .quote::before {
+    background-image: url(//grishanov.org/i/quote-open@2x.png);
+  }
+  .quote::after {
+    background-image: url(//grishanov.org/i/quote-close@2x.png);
   }
 }
