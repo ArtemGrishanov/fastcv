@@ -9,6 +9,47 @@
  */
 
 const works = [
+    // {
+    //    font builder for payment web
+    // },
+    {
+      title: 'Facebook Panoramas Builder',
+      description: {
+        common: 'This project is a part of Testix eco-system. A user can upload his photo, put labels if needed and post to Facebook as the panorama. Application transforms user common photo to pano-photo automatically using special algorithms.',
+        tech: 'The main tech challenge was setting new appropriate image dimensions and rewriting EXIF tags if needed.'
+      },
+      dateStart: 'Jan 2017',
+      dateEnd: 'May 2017',
+      url: 'https://testix.me/storefront.html?app=fbPanorama',
+      images: [
+        '//grishanov.org/img/fbpano5.jpg',
+        '//grishanov.org/img/fbpano4.jpg',
+        '//grishanov.org/img/fbpano6.jpg'
+      ],
+      tags: ['facebook','aws','javascript','backbone','html5','css'],
+      teamSize: 2,
+      role: 'Developer',
+      complexity: 5
+    },
+    {
+      title: 'Kinder surprise',
+      description: {
+        common: 'A funny project where users send "chocolate" eggs to their friends in the social network. A friend can find one of 6 cute presents inside the egg.',
+        tech: 'We developed many async actions to communicate with social network API. Desktop and mobile version for browsers and web-views.'
+      },
+      dateStart: 'Apr 2018',
+      dateEnd: 'May 2018',
+      url: 'https://ok.ru/app/kinder2018',
+      images: [
+        '//grishanov.org/img/kinder1.jpg',
+        '//grishanov.org/img/kinder2.jpg',
+        '//grishanov.org/img/kinder3.jpg'
+      ],
+      tags: ['react','redux','es6','jsx','javascript','css','webpack'],
+      teamSize: 5,
+      role: 'Developer',
+      complexity: 3
+    },
     {
       title: 'Fastcv',
       description: {
@@ -21,8 +62,7 @@ const works = [
         '//grishanov.org/img/fastcv1.jpg',
         '//grishanov.org/img/fastcv2.jpg'
       ],
-      url: 'https://github.com/artemgrishanov/fastcv',
-      tags: ['react','es6','jsx','javascript','html','css','webpack'],
+      tags: ['react','es6','jsx','javascript','css','webpack'],
       teamSize: 2,
       role: 'Developer',
       complexity: 2
@@ -45,7 +85,7 @@ const works = [
         '//grishanov.org/img/testix5.jpg'
       ],
       url: 'https://testix.me',
-      tags: ['aws','javascript','html','css','facebook api','social','canvas'],
+      tags: ['aws','javascript','css','facebook api','canvas','backbone','gulp'],
       teamSize: 3,
       role: 'Founder, CTO',
       complexity: 5
@@ -63,7 +103,7 @@ const works = [
         '//grishanov.org/img/colorizer1.jpg'
       ],
       url: '',
-      tags: ['ai','html','javascript','social'],
+      tags: ['javascript'],
       teamSize: 10,
       role: 'Project Manager',
       complexity: 4
@@ -82,7 +122,7 @@ const works = [
         '//grishanov.org/img/museums2.jpg'
       ],
       url: 'https://artsmuseum.ok.ru/',
-      tags: ['html', 'javascript', 'audio'],
+      tags: ['javascript'],
       complexity: 2,
       role: 'Project Manager',
       teamSize: 8
@@ -100,7 +140,7 @@ const works = [
         '//grishanov.org/img/ok9let_3.jpg'
       ],
       url: 'https://9.ok.ru',
-      tags: ['animation', 'html', 'javascript', 'css'],
+      tags: ['animation', 'javascript', 'css'],
       complexity: 4,
       role: 'Developer',
       teamSize: 4
@@ -119,7 +159,7 @@ const works = [
         '//grishanov.org/img/newyear2015_3.png',
       ],
       url: null,
-      tags: ['backbone','javascript','html','game'],
+      tags: ['backbone','javascript','game'],
       complexity: 5,
       role: 'Developer',
       teamSize: 6
@@ -178,7 +218,7 @@ const works = [
         '//grishanov.org/img/constructor2.png'
       ],
       url: 'https://ok.ru/app/constructor',
-      tags: ['html', 'css', 'javascript', 'ajax', 'canvas', 'cors', 'social', 'rest', 'grunt', 'svg', 'animation'],
+      tags: ['css', 'javascript', 'ajax', 'canvas', 'rest', 'grunt', 'svg', 'animation'],
       complexity: 5,
       role: 'Developer',
       teamSize: 3
@@ -213,7 +253,7 @@ const works = [
       dateStart: 'Jan 01 2014',
       dateEnd: 'Jan 30 2014',
       url: null,
-      tags: ['AI', 'social', 'javascript'],
+      tags: ['javascript'],
       complexity: 4,
       role: 'Project Manager',
       teamSize: 4
@@ -230,7 +270,7 @@ const works = [
       dateEnd: 'Feb 14 2014',
       images: ['//grishanov.org/img/olimp.png'],
       url: null,
-      tags: ['html', 'javascript', 'jquery', 'game', 'animation', 'canvas'],
+      tags: ['javascript', 'jquery', 'game', 'animation', 'canvas'],
       complexity: 4,
       role: 'Developer',
       teamSize: 3
@@ -266,7 +306,7 @@ const works = [
       dateStart: 'Jul 30 2013',
       dateEnd: 'Oct 01 2013',
       url: null,
-      tags: ['actionscript3','flash','flex','animation','rest','social'],
+      tags: ['actionscript3','flash','flex','animation','rest'],
       complexity: 5,
       role: 'Developer',
       teamSize: 5
@@ -281,7 +321,7 @@ const works = [
       dateStart: 'Sep 05 2012',
       dateEnd: 'Dec 20 2012',
       url: null,
-      tags: ['flash','actionscript3','flex','animation','rest','social'],
+      tags: ['flash','actionscript3','flex','animation','rest'],
       complexity: 4,
       role: 'Developer',
       teamSize: 6
@@ -298,7 +338,7 @@ const works = [
       dateStart: 'Sep 06 2012',
       dateEnd: 'Nov 23 2012',
       url: null,
-      tags: ['actionscript3','flash','flex','animation','rest','social'],
+      tags: ['actionscript3','flash','flex','animation','rest'],
       complexity: 3,
       role: 'Developer',
       teamSize: 3
@@ -314,7 +354,7 @@ const works = [
       dateStart: 'Jul 13 2012',
       dateEnd: 'Sep 18 2012',
       url: null,
-      tags: ['actionscript3','flash','flex','animation','rest','social'],
+      tags: ['actionscript3','flash','flex','animation','rest'],
       complexity: 3,
       role: 'Developer',
       teamSize: 5
@@ -331,7 +371,7 @@ const works = [
       complexity: 2,
       dateStart: 'Aug 31 2011',
       dateEnd: 'Sep 30 2011',
-      tags: ['actionscript3','Flex']
+      tags: ['actionscript3','flex']
     },
     {
       featured: true,
@@ -348,7 +388,8 @@ const works = [
       ],
       dateStart: 'Jun 30 2011',
       dateEnd: 'Aug 30 2011',
-      tags: ['graphics','actionscript3','flash','twitter','rest']
+      tags: ['actionscript3','flash','twitter','rest'],
+      complexity: 4
     },
     {
       featured: true,
@@ -364,7 +405,7 @@ const works = [
       dateStart: 'Jan 20 2011',
       dateEnd: 'May 30 2011',
       url: null,
-      tags: ['flash','actionscript3','animation','facebook api','game','rest','social'],
+      tags: ['flash','actionscript3','animation','facebook api','game','rest'],
       complexity: 4,
       role: 'Developer',
       teamSize: 12
@@ -379,8 +420,11 @@ const works = [
         common: 'Small funny date app, mark girls photos and select the best one.'
       },
       images: ['//grishanov.org/img/Facecontrol.jpg'],
+      tags: ['flash','actionscript3','php','rest'],
       dateStart: 'Jul 2010',
-      dateEnd: 'Dec 2010'
+      dateEnd: 'Dec 2010',
+      complexity: 3,
+      teamSize: 2
     },
     {
       title: 'Barman',
@@ -391,7 +435,9 @@ const works = [
       role: 'Founder, Developer',
       dateStart: 'Aug 2010',
       dateEnd: 'Nov 2010',
-      tech: ['java', 'mysql', 'php', 'actionscript3', 'animation', 'flash', 'rest', 'vk', 'social', 'gamedev']
+      tech: ['java', 'mysql', 'php', 'actionscript3', 'animation', 'flash', 'rest', 'game'],
+      complexity: 5,
+      teamSize: 2
     },
     {
       title: 'Radio',
@@ -402,7 +448,9 @@ const works = [
       images: ['//grishanov.org/img/Radio.jpg'],
       tags: ['php','lastfm','rest','actionscript3','flex'],
       dateStart: '2010',
-      dateEnd: '2010'
+      dateEnd: '2010',
+      teamSize: 1,
+      complexity: 5
     },
     {
       featured: true,
@@ -453,7 +501,7 @@ const works = [
       complexity: 5,
       dateStart: '2007',
       dateEnd: '2007',
-      tags: ['java', 'ai', 'game']
+      tags: ['java', 'game', 'mobile']
     },
     {
       title: 'Numerology',
@@ -467,6 +515,7 @@ const works = [
         '//grishanov.org/img/numerology3.jpg',
         '//grishanov.org/img/numerology4.jpg',
       ],
+      tags: ['java', 'mobile'],
       complexity: 3,
       dateStart: 'Jan 01 2006',
       dateEnd: 'Dec 01 2006',
@@ -483,13 +532,15 @@ const works = [
       complexity: 3,
       dateStart: 'Jun 01 2004',
       dateEnd: 'Oct 01 2005',
-      tags: ['java'],
+      tags: ['java', 'mobile'],
       teamSize: 4
     }
 ]
 
 export const cv = {
   name: 'Artem Grishanov',
+  //name: 'Oleg Lukinov',
+  //photoUrl: '//holge.me/holge.jpg'
   email: 'grishanov.artem@gmail.com',
   photoUrl: '//grishanov.org/avatar/avatar380.jpg',
   quote: 'One, learn a lot about things that matter. Two, work on problems that interest you and three, with people you like and respect. - Paul Graham',
@@ -500,14 +551,14 @@ export const cv = {
     {label: 'Coffee cups',  value: '4096'}
   ],
   selectedWorks: [
-    works[1], // testix
-    works[23], // mafia
-    works[8] // present builder
+    works[3], // testix
+    works[25], // mafia
+    works[10] // present builder
   ],
   works: works,
   facebook: '//facebook.com/artem.grishanov',
   linkedin: '//www.linkedin.com/in/artem-grishanov-88b24658/',
   github: '//github.com/artemgrishanov/',
-  pdfcv: '//grishanov.org/pdf/cv.pdf',
+  pdfcv: 'http://grishanov.org/pdf/cv.pdf',
   skype: 'artemgrishanov'
 }

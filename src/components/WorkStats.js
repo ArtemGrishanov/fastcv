@@ -3,7 +3,7 @@ import React from 'react'
 /**
   * @param {Array} stats {label, value}
   */
-export const WorkStats = ({ header, stats }) => {
+export const WorkStats = ({ header, stats = []}) => {
 
   return (
     <div>

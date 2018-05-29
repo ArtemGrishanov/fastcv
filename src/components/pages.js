@@ -30,7 +30,9 @@ export const Home = ({
         <h1>{name}</h1>
         <div className="avatar" style={{backgroundImage:"url("+photo+")"}}></div>
       </div>
-      <Quote text={quote}/>
+      {quote &&
+        <Quote text={quote}/>
+      }
       <p className="about">{about}</p>
       <WorkStats stats={personalStats}/>
       <div className="divider"></div>

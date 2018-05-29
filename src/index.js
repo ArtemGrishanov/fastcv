@@ -17,18 +17,22 @@ import { cv } from './cv'
 
 const allTags = []
 const selectedWorks = []
-cv.works.forEach((element) => {
-  element.workId = element.title.replace(/[^A-z0-9]/g,'')
-  // collect all unique tags
-  if (element.tags && element.tags.length > 0) {
-    element.tags.forEach((tag) => {
-      if (allTags.indexOf(tag) < 0) allTags.push(tag)
-    })
-  }
 
-  //
-  if (element.selectedWorks) selectedWorks.push(element)
-})
+cv.works = cv.works || [];
+if (cv.works.length > 0) {
+  cv.works.forEach((element) => {
+    element.workId = element.title.replace(/[^A-z0-9]/g,'')
+    // collect all unique tags
+    if (element.tags && element.tags.length > 0) {
+      element.tags.forEach((tag) => {
+        if (allTags.indexOf(tag) < 0) allTags.push(tag)
+      })
+    }
+
+    //
+    if (element.selectedWorks) selectedWorks.push(element)
+  })
+}
 
 ReactDOM.render(
   <App tags={allTags} selectedWorks={selectedWorks}/>,

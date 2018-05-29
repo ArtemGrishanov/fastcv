@@ -1,14 +1,17 @@
 
 TODO:
 - pdf file link
-
-- ga counter place
-- production build and deploy on aws
 - set up https -> install cdn
-
 
 - github readme
 - Show only 4 projects on start, then load others
 - "smart" image loading
 - Make work cards larger or smaller depending on project weight (complexity, duration etc...)
 -
+
+
+Change person process:
+- index title
+- ga statistics
+- og:title
+- cv attrs
